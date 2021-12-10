@@ -2,7 +2,7 @@
 # x1 = 0, y1 = 1, x2= 2, y2 = 3
 
 def main():
-    data = getInput('input day05.txt')
+    data = getInput('day05/input day05.txt')
     x1,y1,x2,y2 = 0,1,2,3
     xMax, yMax = getMax(data)
     vents = [[0 for i in range(xMax+1)] for j in range(yMax+1)]

@@ -1,5 +1,5 @@
 def main():
-    data = getInput("input day07.txt")
+    data = getInput("day07/input day07.txt")
     max = maximum(data)
 
     fuel1 = [[0 for _ in range(max + 1)] for __ in range(len(data))]

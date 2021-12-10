@@ -56,7 +56,7 @@ def lookup(d, ex):
 
 
 print('Part 1:')
-data = getInput("input day08.txt")
+data = getInput("day08/input day08.txt")
 count = 0
 for row in data:
     for digit in row[1]:

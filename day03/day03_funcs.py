@@ -1,7 +1,7 @@
 import numpy as np
     
 def main():
-    input = getInput('input day03.txt')
+    input = getInput('day03/input day03.txt')
     gammaRate, epsilonRate = mostCommonValue(input) 
     print('----Part One----')
     print(f'Gamma Rate: {gammaRate} \nEpsilon Rate: {epsilonRate}\n')

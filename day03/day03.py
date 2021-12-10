@@ -1,6 +1,6 @@
 import numpy as np
 
-file = open('input day03.txt','r')
+file = open('day03/input day03.txt','r')
 inp = file.readlines()
 file.close()
 

@@ -1,7 +1,7 @@
 import numpy as np
 
 
-file = open('Input Day 1.txt','r')
+file = open('day01/Input Day 1.txt','r')
 inp = file.readlines()
 file.close()
 

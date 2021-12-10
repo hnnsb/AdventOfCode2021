@@ -1,8 +1,8 @@
 import numpy as np
     
 def main():
-    numbers = getInput1('input day04_1.txt')
-    boards = getInput('input day04_2.txt')
+    numbers = getInput1('day04/input day04_1.txt')
+    boards = getInput('day04/input day04_2.txt')
     #print(numbers)
     #print(boards)
     

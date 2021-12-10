@@ -2,7 +2,7 @@ import numpy as np
 
 input = []
 
-with open('input day02.txt','r') as file:
+with open('day02/input day02.txt','r') as file:
     for line in file:
         inner_list = [elt.strip() for elt in line.split()]
         input.append(inner_list)

@@ -1,7 +1,7 @@
 
 
 def main():
-    data = getInput('input day06.txt')
+    data = getInput('day06/input day06.txt')
     new = 8
     reset = 6
     days = 256
