@@ -1,8 +1,9 @@
+import os
 
 # x1 = 0, y1 = 1, x2= 2, y2 = 3
 
 def main():
-    data = getInput('day05/input day05.txt')
+    data = getInput('day05')
     x1,y1,x2,y2 = 0,1,2,3
     xMax, yMax = getMax(data)
     vents = [[0 for i in range(xMax+1)] for j in range(yMax+1)]
@@ -70,13 +71,11 @@ def getMax(li):
     return xmax,ymax
     
 
-def getInput(path):
+def getInput(day):
+    path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
     file = open(f'{path}','r')
-    #inp = file.read().split(',')
-    #print(inp)
     
     raw = [x for x in file.read().split('\n') ]
-    #raw = file.readlines()
     raw = [x.replace(' -> ', ',')for x in raw]
     inp = [x.split(',') for x in raw]
     inp = [[int(x) for x in sublist] for sublist in inp]

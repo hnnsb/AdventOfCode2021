@@ -1,5 +1,7 @@
+import os
+
 def main():
-    data = getInput("day07/input day07.txt")
+    data = getInput("day07")
     max = maximum(data)
 
     fuel1 = [[0 for _ in range(max + 1)] for __ in range(len(data))]
@@ -66,7 +68,8 @@ def maximum(list: list[int]) -> int:
     return max
 
 
-def getInput(path: str):
+def getInput(day: str):
+    path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
     file = open(f'{path}', 'r')
     raw = file.read().split(',')
     inp = [int(x) for x in raw]

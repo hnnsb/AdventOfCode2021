@@ -1,6 +1,9 @@
 import numpy as np
+import os
 
-file = open('day03/input day03.txt','r')
+day = 'day03'
+path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
+file = open(path)
 inp = file.readlines()
 file.close()
 

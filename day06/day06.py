@@ -1,7 +1,7 @@
-
+import os
 
 def main():
-    data = getInput('day06/input day06.txt')
+    data = getInput('day06')
     new = 8
     reset = 6
     days = 256
@@ -44,7 +44,8 @@ def main():
 
 
 
-def getInput(path):
+def getInput(day):
+    path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
     file = open(f'{path}','r')
     raw = file.read().split(',')
     inp = [int(x) for x in raw]

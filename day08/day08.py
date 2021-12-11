@@ -1,6 +1,7 @@
+import os
 
-
-def getInput(path):
+def getInput(day: str):
+    path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
     file = open(f'{path}', 'r')
     raw = file.readlines()
     raw = [x.strip('\n') for x in raw]
@@ -56,7 +57,7 @@ def lookup(d, ex):
 
 
 print('Part 1:')
-data = getInput("day08/input day08.txt")
+data = getInput("day08")
 count = 0
 for row in data:
     for digit in row[1]:

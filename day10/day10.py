@@ -1,4 +1,7 @@
-def getInput(path):
+import os
+
+def getInput(day: str):
+    path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
     file = open(f'{path}', 'r')
     raw = file.readlines()
 
@@ -9,7 +12,7 @@ def getInput(path):
     return inp
 
 
-data = getInput('day10/input day10.txt')
+data = getInput('day10')
 
 open = ['(', '[', '{', '<']
 close = [')', ']', '}', '>']

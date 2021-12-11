@@ -1,4 +1,7 @@
-def getInput(path):
+import os
+
+def getInput(day: str):
+    path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
     file = open(f'{path}', 'r')
     raw = file.readlines()
 
@@ -31,7 +34,7 @@ def isLowPoint(x,y,data):
 
 
 print('part 1')
-data = getInput('day09/input day09.txt')
+data = getInput('day09')
 #data = getInput('day09/short input.txt')
 
 sum = 0

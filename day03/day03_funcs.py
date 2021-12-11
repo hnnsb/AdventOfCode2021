@@ -1,7 +1,8 @@
 import numpy as np
+import os
     
 def main():
-    input = getInput('day03/input day03.txt')
+    input = getInput('day03')
     gammaRate, epsilonRate = mostCommonValue(input) 
     print('----Part One----')
     print(f'Gamma Rate: {gammaRate} \nEpsilon Rate: {epsilonRate}\n')
@@ -15,7 +16,8 @@ def main():
     oxGeneratorRatingB10, c02scrubbingRaingB10 = int(oxGeneratorRating, 2), int(c02scrubbingRaing, 2)
     print(f'Result is: {oxGeneratorRatingB10 * c02scrubbingRaingB10}')
     
-def getInput(path):
+def getInput(day):
+    path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
     file = open(f'{path}','r')
     inp = file.readlines()
     file.close()

@@ -1,8 +1,11 @@
 import numpy as np
+import os
 
 input = []
 
-with open('day02/input day02.txt','r') as file:
+day = 'day02'
+path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
+with open(path,'r') as file:
     for line in file:
         inner_list = [elt.strip() for elt in line.split()]
         input.append(inner_list)

@@ -1,4 +1,7 @@
-def getInput(path):
+import os
+
+def getInput(day: str):
+    path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
     file = open(f'{path}', 'r')
     raw = file.readlines()
     raw = [x.strip('\n') for x in raw]
@@ -37,7 +40,7 @@ def didAllFlash(flashed):
 
     return True
 
-data = getInput("day11/input day11.txt")
+data = getInput("day11")
 
 # data = [[1, 1, 1, 1, 1],
 #         [1, 9, 9, 9, 1],
