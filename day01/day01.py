@@ -2,7 +2,7 @@ import numpy as np
 import os
 
 day = 'day01'
-path = os.path.join(os.getcwd(), f'{day}', f'input {day}.txt')
+path = os.path.join(os.getcwd(), f'input {day}.txt')
 file = open(path,'r')
 inp = file.readlines()
 file.close()
