@@ -1,4 +1,5 @@
 import sys
+from InputHandling import getdirabspath
 import os
 import itertools
 from copy import deepcopy
@@ -8,8 +9,8 @@ sys.setrecursionlimit(int(1e6))
 
 
 def getInput(day: str):
-    path_self = os.path.dirname(os.path.abspath('__file__'))
-    path_input = os.path.join(path_self, f'{day}', f'input {day}.txt')
+    path = getdirabspath()
+    path_input = os.path.join(path, f'input {day}.txt')
     file = open(f'{path_input}', 'r')
     raw = file.readline()
     # inp = [line.strip('\n').split(' -> ') for line in raw]
